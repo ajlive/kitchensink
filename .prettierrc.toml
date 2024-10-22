@@ -1,0 +1,3 @@
+plugins = ["prettier-plugin-toml"]
+useTabs = true
+semi = false
