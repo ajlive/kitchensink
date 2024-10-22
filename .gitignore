@@ -20,6 +20,9 @@
 # Go workspace file
 go.work
 go.work.sum
+# except for top-level files:
+!/go.work
+!/go.work.sum
 
 # env file
 .env
