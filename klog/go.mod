@@ -1,4 +1,4 @@
-module klog
+module github.com/ajlive/kitchensink/klog
 
 go 1.23.2
 
