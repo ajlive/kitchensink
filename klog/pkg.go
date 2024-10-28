@@ -68,7 +68,7 @@ func WithFormatter(formatter Formatter) option {
 type option func(*config)
 
 type config struct {
-	*chlog.Options
+	chlog.Options
 	writer io.Writer
 }
 
@@ -85,5 +85,5 @@ func newCharmlogger(opts ...option) *chlog.Logger {
 	for _, opt := range opts {
 		opt(cfg)
 	}
-	return chlog.NewWithOptions(cfg.writer, *cfg.Options)
+	return chlog.NewWithOptions(cfg.writer, cfg.Options)
 }
